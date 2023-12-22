@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     const navItems = <>
-        <li><a>Home</a></li>
+        <li className='hover:text-yellow-300'><a>Home</a></li>
         <li>
             <a>Contact us</a>
             <ul className="p-2 hidden">
@@ -16,7 +16,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar justify-between bg-base-100">
+        <div className="navbar justify-between bg-black/30 text-white fixed top-0 left-0 right-0 z-10 px-40 py-5">
             <div className="">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
