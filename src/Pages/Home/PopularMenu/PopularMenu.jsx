@@ -15,7 +15,7 @@ const PopularMenu = () => {
     
     return (
         <section className='mb-20'>
-            <SectionTitle heading="From Our Menu" subheading="Check It Out"></SectionTitle>
+            <SectionTitle heading="From Our Menu" subheading="Check It Out" textColor={"text-black"}></SectionTitle>
             <div className='grid md:grid-cols-2 gap-12 mt-12'>
                 {
                     menu.map(item => <MenuItem

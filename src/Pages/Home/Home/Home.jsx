@@ -6,10 +6,16 @@ import SectionTags from '../../../components/SectionTags/SectionTags';
 import Featured from '../Featured/Featured';
 import Testimonials from '../Testimonials/Testimonials';
 import Recommendations from '../Recommendations/Recommendations';
+import { Helmet } from 'react-helmet-async';
+import chefService from '../../../assets/home/chef-service.jpg';
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Bistro Boss | Home</title>
+            </Helmet>
+
             <Banner></Banner>
 
             <div className='max-w-screen-2xl mx-auto mt-20'>
@@ -18,6 +24,10 @@ const Home = () => {
                 <SectionTags 
                     heading="Bistro Boss" 
                     subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, libero accusamus laborum deserunt ratione dolor officiis praesentium! Deserunt magni aperiam dolor eius dolore at, nihil iusto ducimus incidunt quibusdam nemo"
+                    img={chefService}
+                    mainContainer={"h-[572px]"}
+                    txtContainer={"w-[1096px] h-[334px] bg-white text-black"}
+                    pageTag={false}
                 ></SectionTags>
 
                 <PopularMenu></PopularMenu>

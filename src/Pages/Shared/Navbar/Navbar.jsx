@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const navItems = <>
-        <li className='hover:text-yellow-300'><a>Home</a></li>
+        <li className='hover:text-yellow-300'><Link to='/'>Home</Link></li>
         <li>
             <a>Contact us</a>
             <ul className="p-2 hidden">
@@ -11,7 +12,7 @@ const Navbar = () => {
             </ul>
         </li>
         <li><a>Dashboard</a></li>
-        <li><a>Our menu</a></li>
+        <li><Link to='/menu'>Our menu</Link></li>
         <li><a>Our shop</a></li>
     </>
 
@@ -26,10 +27,10 @@ const Navbar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <a>
+                <Link to='/'>
                     <span className='text-2xl font-black'>BISTRO BOSS</span><br />
                     <span className='text-xl font-bold tracking-widest'>Restaurant</span>
-                </a>
+                </Link>
             </div>
             <div className="hidden lg:flex">
                 <ul className="menu menu-horizontal font-extrabold uppercase px-1">

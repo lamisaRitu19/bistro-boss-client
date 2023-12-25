@@ -5,7 +5,7 @@ import ItemCard from '../../../components/ItemCard/ItemCard';
 const Recommendations = () => {
     return (
         <section>
-            <SectionTitle heading="Chef Recommends" subheading="Should Try"></SectionTitle>
+            <SectionTitle heading="Chef Recommends" subheading="Should Try" textColor={"text-black"}></SectionTitle>
             <div className='grid grid-cols-3 gap-12 mt-10 mb-24'>
                 <ItemCard></ItemCard>
                 <ItemCard></ItemCard>

@@ -7,7 +7,7 @@ const Featured = () => {
         <section className='h-[848px] bg-featured-item bg-fixed mb-24'>
             <div className='h-full bg-black/70'>
                 <div className='max-w-screen-2xl mx-auto pt-28'>
-                    <SectionTitle heading="From Our Menu" subheading="Check it out"></SectionTitle>
+                    <SectionTitle heading="From Our Menu" subheading="Check it out" textColor={"text-white"}></SectionTitle>
                     <div className='md:flex justify-center items-center space-x-12 py-8 mt-4'>
                         <img src={featuredImg} alt="" className='w-[648px]' />
                         <div className='text-white text-xl text-left'>

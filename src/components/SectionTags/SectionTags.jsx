@@ -1,13 +1,22 @@
 import React from 'react';
+import { Parallax } from 'react-parallax';
 
-const SectionTags = ({heading, subheading}) => {
+const SectionTags = ({heading, subheading, img, mainContainer, txtContainer, pageTag}) => {
     return (
-        <div className='bg-chef-service h-[572px] flex justify-center items-center mb-16'>
-            <div className='w-[1096px] h-[334px] flex flex-col justify-center bg-white text-black px-40'>
-                <h3 className='text-4xl mb-4'>{heading}</h3>
-                <p>{subheading}</p>
+        <Parallax
+            blur={{ min: -15, max: 15 }}
+            bgImage={img}
+            bgImageAlt="chef service"
+            strength={-200}
+            className='mb-16'
+        >
+            <div className={`${mainContainer} flex justify-center items-center`} >
+                <div className={`${txtContainer} flex flex-col justify-center px-40`}>
+                    <h3 className={pageTag? 'text-7xl font-bold mb-4': 'text-4xl font-medium mb-4'}>{heading}</h3>
+                    <p className={pageTag && 'text-2xl font-semibold'}>{subheading}</p>
+                </div>
             </div>
-        </div>
+        </Parallax>
     );
 };
 
