@@ -12,8 +12,8 @@ const SectionTags = ({heading, subheading, img, mainContainer, txtContainer, pag
         >
             <div className={`${mainContainer} flex justify-center items-center`} >
                 <div className={`${txtContainer} flex flex-col justify-center px-40`}>
-                    <h3 className={pageTag? 'text-7xl font-bold mb-4': 'text-4xl font-medium mb-4'}>{heading}</h3>
-                    <p className={pageTag && 'text-2xl font-semibold'}>{subheading}</p>
+                    <h3 className={pageTag? 'text-7xl font-bold capitalize mb-4': 'text-4xl font-medium capitalize mb-4'}>{heading}</h3>
+                    <p className={pageTag? 'text-2xl font-semibold' : ''}>{subheading}</p>
                 </div>
             </div>
         </Parallax>
